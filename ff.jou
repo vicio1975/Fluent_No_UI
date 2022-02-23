@@ -1,0 +1,6 @@
+;Journal file automatically created by Fluent!
+switch-to-mesh-mode yes
+;switch-to-solution-mode yes
+/file read-case D:/SBD/Space400/Temp_check/C4/Space400_c4_surf.msh.h5
+
+
