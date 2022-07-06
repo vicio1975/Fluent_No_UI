@@ -13,15 +13,15 @@ Host spawning Node 0 on machine "CASL5CD952DBRR" (win64).
 -------------------------------------------------------------------------------
 ID    Hostname        Core  O.S.         PID    Vendor                        
 -------------------------------------------------------------------------------
-n7    CASL5CD952DBRR  8/16  Windows-x64  9556   Intel(R) Xeon(R) E-2286M      
-n6    CASL5CD952DBRR  7/16  Windows-x64  8528   Intel(R) Xeon(R) E-2286M      
-n5    CASL5CD952DBRR  6/16  Windows-x64  10408  Intel(R) Xeon(R) E-2286M      
-n4    CASL5CD952DBRR  5/16  Windows-x64  14752  Intel(R) Xeon(R) E-2286M      
-n3    CASL5CD952DBRR  4/16  Windows-x64  11184  Intel(R) Xeon(R) E-2286M      
-n2    CASL5CD952DBRR  3/16  Windows-x64  8960   Intel(R) Xeon(R) E-2286M      
-n1    CASL5CD952DBRR  2/16  Windows-x64  13340  Intel(R) Xeon(R) E-2286M      
-n0*   CASL5CD952DBRR  1/16  Windows-x64  16476  Intel(R) Xeon(R) E-2286M      
-host  CASL5CD952DBRR        Windows-x64  16308  Intel(R) Xeon(R) E-2286M      
+n7    CASL5CD952DBRR  8/16  Windows-x64  5580   Intel(R) Xeon(R) E-2286M      
+n6    CASL5CD952DBRR  7/16  Windows-x64  3240   Intel(R) Xeon(R) E-2286M      
+n5    CASL5CD952DBRR  6/16  Windows-x64  2352   Intel(R) Xeon(R) E-2286M      
+n4    CASL5CD952DBRR  5/16  Windows-x64  3552   Intel(R) Xeon(R) E-2286M      
+n3    CASL5CD952DBRR  4/16  Windows-x64  10504  Intel(R) Xeon(R) E-2286M      
+n2    CASL5CD952DBRR  3/16  Windows-x64  12508  Intel(R) Xeon(R) E-2286M      
+n1    CASL5CD952DBRR  2/16  Windows-x64  16568  Intel(R) Xeon(R) E-2286M      
+n0*   CASL5CD952DBRR  1/16  Windows-x64  16288  Intel(R) Xeon(R) E-2286M      
+host  CASL5CD952DBRR        Windows-x64  9740   Intel(R) Xeon(R) E-2286M      
 
 MPI Option Selected: intel
 Selected system interconnect: default
@@ -29,9 +29,9 @@ Selected system interconnect: default
 
 
 
-Cleanup script file is C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\\cleanup-fluent-CASL5CD952DBRR-2320.bat
+Cleanup script file is C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\\cleanup-fluent-CASL5CD952DBRR-17972.bat
 
-Reading journal file C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\post_processing.jou...
+Reading journal file C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\post.jou...
 
 > /file read-case-data D:/SBD/BMLite_60/_sbd/doe2/case02/doe2_case02.cas.h5
 Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
@@ -153,9 +153,12 @@ Warning: reading 30 partition grid onto 8 compute node machine.
             111 mixed interior faces,  zone id: 86
           25658 mixed interior faces,  zone id: 85
          154474 triangular interior faces,  zone id: 84
-          25290 mixed interior faces,  zone id: 83
-          27398 mixed interior faces,  zone id: 82
-          21115 triangular interior faces,  zone id: 81
+ 
+         25290 mixed interior faces,  zone id: 83
+           27398 Re miadxed interingior S fahecesll ,  Flzoneag ids : 82
+. ..
+       Done.
+    21115 triangular interior faces,  zone id: 81
              75 triangular wall faces,  zone id: 80
              75 triangular wall faces,  zone id: 120
              81 triangular wall faces,  zone id: 79
@@ -234,12 +237,9 @@ Warning: reading 30 partition grid onto 8 compute node machine.
              54 triangular wall faces,  zone id: 106
            4203 triangular wall faces,  zone id: 40
            4203 triangular wall faces,  zone id: 181
- 
-        Rea   38din868 g Smixed vheelocllity-inl Flet agsfaces,   ...
-zone id: 39
+          38868 mixed velocity-inlet faces,  zone id: 39
            1281 triangular wall faces,  zone id: 105
-           1281 triangular  wall fac Done.
-es,  zone id: 182
+           1281 triangular wall faces,  zone id: 182
               1 triangular wall face ,  zone id: 104
               1 triangular wall face ,  zone id: 183
           15593 triangular wall faces,  zone id: 36
@@ -614,36 +614,3 @@ Reading from CASL5CD952DBRR:"D:/SBD/BMLite_60/_sbd/doe2/case02/doe2_case02.dat.h
 
 
   Reading results.
-Parallel variables...
-Done.
-
-> 
-adjoint/                mesh/                   report/
-define/                 parallel/               solve/
-display/                plot/                   surface/
-exit                    preferences/            views/
-file/                   print-license-usage
-
-> ;Noise @ blower bou_of_fan_mrf_inside*
-/report/surface-integrals/ vertex-max bou_of_fan_mrf_inside* () surface-acoustic-power-db yes "D:/SBD/BMLite_60/_sbd/doe2/case01/Post_processing.srp"
-File "D:/SBD/BMLite_60/_sbd/doe2/case01/Post_processing.srp" exists.
-Append data to it? [yes] ;Noise @ fan bracket r_mc_air_fan_bracket_mc_air_*
-/report/surface-integrals/ Please answer y[es] or n[o].
-vertex-max Please answer y[es] or n[o].
-r_mc_air_fan_bracket_mc_air_* Please answer y[es] or n[o].
-()Please answer y[es] or n[o].
- surface-acoustic-power-db Please answer y[es] or n[o].
-yes "D:/Sinvalid command ["D:]
-BD/BMLite_60/_sbd/doe2/case01/Post_processing.srp" yes
-
-> ;Volume flowrate
-/report/surface-integrals/  volume-flow-rate r_porous*mc_air* () yes "D:/SBD/BMLite_60/_sbd/doe2/case01/Post_processing.srp" yes
-
-> 
-adjoint/                mesh/                   report/
-define/                 parallel/               solve/
-display/                plot/                   surface/
-exit                    preferences/            views/
-file/                   print-license-usage
-
-> /exit yes
