@@ -1,0 +1,616 @@
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:53:52 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "CASL5CD952DBRR" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname        Core  O.S.         PID    Vendor                        
+-------------------------------------------------------------------------------
+n7    CASL5CD952DBRR  8/16  Windows-x64  9556   Intel(R) Xeon(R) E-2286M      
+n6    CASL5CD952DBRR  7/16  Windows-x64  8528   Intel(R) Xeon(R) E-2286M      
+n5    CASL5CD952DBRR  6/16  Windows-x64  10408  Intel(R) Xeon(R) E-2286M      
+n4    CASL5CD952DBRR  5/16  Windows-x64  14752  Intel(R) Xeon(R) E-2286M      
+n3    CASL5CD952DBRR  4/16  Windows-x64  11184  Intel(R) Xeon(R) E-2286M      
+n2    CASL5CD952DBRR  3/16  Windows-x64  8960   Intel(R) Xeon(R) E-2286M      
+n1    CASL5CD952DBRR  2/16  Windows-x64  13340  Intel(R) Xeon(R) E-2286M      
+n0*   CASL5CD952DBRR  1/16  Windows-x64  16476  Intel(R) Xeon(R) E-2286M      
+host  CASL5CD952DBRR        Windows-x64  16308  Intel(R) Xeon(R) E-2286M      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+
+
+Cleanup script file is C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\\cleanup-fluent-CASL5CD952DBRR-2320.bat
+
+Reading journal file C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\post_processing.jou...
+
+> /file read-case-data D:/SBD/BMLite_60/_sbd/doe2/case02/doe2_case02.cas.h5
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from CASL5CD952DBRR:"D:/SBD/BMLite_60/_sbd/doe2/case02/doe2_case02.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+Warning: reading 30 partition grid onto 8 compute node machine.
+         will auto partition.
+    25090541 cells,    33 cell zones ...
+        7796395 mixed cells,  zone id: 963
+         161598 tetrahedral cells,  zone id: 121
+          20089 tetrahedral cells,  zone id: 122
+        1400402 mixed cells,  zone id: 124
+        1833392 tetrahedral cells,  zone id: 125
+        4691888 mixed cells,  zone id: 126
+          35200 tetrahedral cells,  zone id: 128
+         113018 tetrahedral cells,  zone id: 129
+         175604 tetrahedral cells,  zone id: 130
+        1004204 mixed cells,  zone id: 131
+         181081 tetrahedral cells,  zone id: 132
+        2427368 mixed cells,  zone id: 133
+        2427368 mixed cells,  zone id: 213
+          15350 tetrahedral cells,  zone id: 134
+        1117967 mixed cells,  zone id: 135
+         341513 tetrahedral cells,  zone id: 136
+          97227 tetrahedral cells,  zone id: 137
+          73377 tetrahedral cells,  zone id: 138
+          94274 tetrahedral cells,  zone id: 139
+            885 tetrahedral cells,  zone id: 140
+         103235 tetrahedral cells,  zone id: 141
+          81020 tetrahedral cells,  zone id: 142
+          58050 tetrahedral cells,  zone id: 143
+            813 tetrahedral cells,  zone id: 145
+          28150 tetrahedral cells,  zone id: 146
+            899 tetrahedral cells,  zone id: 147
+            849 tetrahedral cells,  zone id: 148
+         180622 wedge cells,  zone id: 222
+         180622 wedge cells,  zone id: 227
+         180622 wedge cells,  zone id: 231
+          89153 wedge cells,  zone id: 236
+          89153 wedge cells,  zone id: 241
+          89153 wedge cells,  zone id: 245
+    54895186 faces,   243 face zones ...
+          89153 triangular wall faces,  zone id: 240
+          89153 triangular wall faces,  zone id: 249
+          89153 triangular wall faces,  zone id: 235
+          89153 triangular wall faces,  zone id: 250
+         180622 triangular wall faces,  zone id: 226
+         180622 triangular wall faces,  zone id: 251
+         180622 triangular wall faces,  zone id: 221
+         180622 triangular wall faces,  zone id: 252
+           8938 triangular wall faces,  zone id: 220
+           9150 triangular wall faces,  zone id: 219
+           7762 triangular wall faces,  zone id: 218
+          29593 triangular wall faces,  zone id: 217
+          23131 triangular wall faces,  zone id: 216
+          23532 mixed wall faces,  zone id: 215
+        4883336 mixed interior faces,  zone id: 214
+           1428 triangular interior faces,  zone id: 807
+           1530 triangular interior faces,  zone id: 806
+          49812 triangular interior faces,  zone id: 805
+           1374 triangular interior faces,  zone id: 804
+         103392 triangular interior faces,  zone id: 802
+         152413 triangular interior faces,  zone id: 801
+         182534 triangular interior faces,  zone id: 800
+           1500 triangular interior faces,  zone id: 799
+         177536 triangular interior faces,  zone id: 798
+         121482 triangular interior faces,  zone id: 797
+         184970 triangular interior faces,  zone id: 796
+         607793 triangular interior faces,  zone id: 795
+        2226006 mixed interior faces,  zone id: 794
+          26706 triangular interior faces,  zone id: 793
+        4883336 mixed interior faces,  zone id: 792
+         313129 triangular interior faces,  zone id: 791
+        1996950 mixed interior faces,  zone id: 790
+         308986 triangular interior faces,  zone id: 789
+         194936 triangular interior faces,  zone id: 788
+          63741 triangular interior faces,  zone id: 787
+        9721584 mixed interior faces,  zone id: 785
+        3403891 triangular interior faces,  zone id: 784
+        2821673 mixed interior faces,  zone id: 783
+          33439 triangular interior faces,  zone id: 782
+         270713 triangular interior faces,  zone id: 781
+       16120991 mixed interior faces,  zone id: 780
+          23532 mixed interior faces,  zone id: 112
+            111 mixed interior faces,  zone id: 111
+            565 triangular wall faces,  zone id: 52
+            565 triangular wall faces,  zone id: 97
+           2079 triangular wall faces,  zone id: 47
+           2079 triangular wall faces,  zone id: 98
+             48 triangular wall faces,  zone id: 108
+             56 triangular wall faces,  zone id: 107
+             56 triangular wall faces,  zone id: 41
+           1284 triangular wall faces,  zone id: 38
+           1284 triangular wall faces,  zone id: 113
+           1244 triangular wall faces,  zone id: 37
+           1244 triangular wall faces,  zone id: 114
+           2141 triangular wall faces,  zone id: 33
+           2141 triangular wall faces,  zone id: 115
+            189 triangular wall faces,  zone id: 102
+            189 triangular wall faces,  zone id: 116
+            172 triangular wall faces,  zone id: 32
+            172 triangular wall faces,  zone id: 117
+            360 triangular wall faces,  zone id: 100
+            360 triangular wall faces,  zone id: 118
+          11480 triangular wall faces,  zone id: 99
+          11480 triangular wall faces,  zone id: 119
+             38 triangular wall faces,  zone id: 96
+             40 triangular wall faces,  zone id: 95
+             60 triangular wall faces,  zone id: 94
+             60 triangular wall faces,  zone id: 93
+          16312 triangular wall faces,  zone id: 92
+          30715 triangular wall faces,  zone id: 91
+          23603 triangular wall faces,  zone id: 90
+          35627 triangular wall faces,  zone id: 89
+          52884 triangular wall faces,  zone id: 88
+          23131 triangular interior faces,  zone id: 87
+            111 mixed interior faces,  zone id: 86
+          25658 mixed interior faces,  zone id: 85
+         154474 triangular interior faces,  zone id: 84
+          25290 mixed interior faces,  zone id: 83
+          27398 mixed interior faces,  zone id: 82
+          21115 triangular interior faces,  zone id: 81
+             75 triangular wall faces,  zone id: 80
+             75 triangular wall faces,  zone id: 120
+             81 triangular wall faces,  zone id: 79
+             81 triangular wall faces,  zone id: 123
+            330 triangular wall faces,  zone id: 78
+            330 triangular wall faces,  zone id: 127
+             91 triangular wall faces,  zone id: 77
+             91 triangular wall faces,  zone id: 144
+             60 triangular wall faces,  zone id: 76
+             60 triangular wall faces,  zone id: 149
+             60 triangular wall faces,  zone id: 75
+             60 triangular wall faces,  zone id: 150
+            420 triangular wall faces,  zone id: 74
+            420 triangular wall faces,  zone id: 151
+             46 triangular wall faces,  zone id: 73
+             46 triangular wall faces,  zone id: 152
+            178 triangular wall faces,  zone id: 72
+            178 triangular wall faces,  zone id: 153
+          29593 triangular wall faces,  zone id: 71
+          29593 triangular wall faces,  zone id: 154
+          20131 triangular wall faces,  zone id: 70
+          20131 triangular wall faces,  zone id: 155
+            132 triangular wall faces,  zone id: 69
+            132 triangular wall faces,  zone id: 156
+            286 triangular wall faces,  zone id: 68
+            286 triangular wall faces,  zone id: 157
+            668 triangular wall faces,  zone id: 67
+            668 triangular wall faces,  zone id: 158
+            124 triangular wall faces,  zone id: 66
+            124 triangular wall faces,  zone id: 159
+            202 triangular wall faces,  zone id: 65
+            202 triangular wall faces,  zone id: 160
+           4221 triangular wall faces,  zone id: 64
+           4221 triangular wall faces,  zone id: 161
+           3202 triangular wall faces,  zone id: 63
+           3202 triangular wall faces,  zone id: 162
+            418 triangular wall faces,  zone id: 62
+            418 triangular wall faces,  zone id: 163
+           3456 triangular wall faces,  zone id: 61
+           3456 triangular wall faces,  zone id: 164
+           6895 triangular wall faces,  zone id: 60
+           6895 triangular wall faces,  zone id: 165
+            681 triangular wall faces,  zone id: 59
+            681 triangular wall faces,  zone id: 166
+         170438 mixed pressure-outlet faces,  zone id: 58
+          36620 triangular wall faces,  zone id: 57
+           7762 triangular wall faces,  zone id: 56
+           7762 triangular wall faces,  zone id: 167
+          16862 triangular wall faces,  zone id: 55
+          16862 triangular wall faces,  zone id: 168
+            750 triangular wall faces,  zone id: 54
+            750 triangular wall faces,  zone id: 169
+           4096 triangular wall faces,  zone id: 53
+           4096 triangular wall faces,  zone id: 170
+            574 triangular wall faces,  zone id: 110
+            574 triangular wall faces,  zone id: 171
+           9296 triangular wall faces,  zone id: 51
+           9296 triangular wall faces,  zone id: 172
+           3711 triangular wall faces,  zone id: 50
+           3711 triangular wall faces,  zone id: 173
+             83 triangular wall faces,  zone id: 49
+             83 triangular wall faces,  zone id: 174
+           9150 triangular wall faces,  zone id: 48
+           9150 triangular wall faces,  zone id: 175
+           1364 triangular wall faces,  zone id: 109
+           1364 triangular wall faces,  zone id: 176
+           8938 triangular wall faces,  zone id: 46
+           8938 triangular wall faces,  zone id: 177
+            342 triangular wall faces,  zone id: 45
+            782 triangular wall faces,  zone id: 44
+            782 triangular wall faces,  zone id: 178
+           2248 triangular wall faces,  zone id: 43
+           2248 triangular wall faces,  zone id: 179
+           2598 triangular wall faces,  zone id: 42
+           2598 triangular wall faces,  zone id: 180
+             54 triangular wall faces,  zone id: 106
+           4203 triangular wall faces,  zone id: 40
+           4203 triangular wall faces,  zone id: 181
+ 
+        Rea   38din868 g Smixed vheelocllity-inl Flet agsfaces,   ...
+zone id: 39
+           1281 triangular wall faces,  zone id: 105
+           1281 triangular  wall fac Done.
+es,  zone id: 182
+              1 triangular wall face ,  zone id: 104
+              1 triangular wall face ,  zone id: 183
+          15593 triangular wall faces,  zone id: 36
+          15593 triangular wall faces,  zone id: 184
+            302 triangular wall faces,  zone id: 35
+            302 triangular wall faces,  zone id: 185
+         186552 triangular wall faces,  zone id: 34
+           2036 triangular wall faces,  zone id: 103
+           2036 triangular wall faces,  zone id: 186
+            118 triangular wall faces,  zone id: 101
+            118 triangular wall faces,  zone id: 187
+           7203 triangular wall faces,  zone id: 31
+           7203 triangular wall faces,  zone id: 188
+          14573 triangular wall faces,  zone id: 30
+          14573 triangular wall faces,  zone id: 189
+           8127 triangular wall faces,  zone id: 29
+           8127 triangular wall faces,  zone id: 190
+            280 triangular wall faces,  zone id: 28
+            280 triangular wall faces,  zone id: 191
+           2226 triangular wall faces,  zone id: 27
+           2226 triangular wall faces,  zone id: 192
+           7284 triangular wall faces,  zone id: 26
+           7284 triangular wall faces,  zone id: 193
+           3247 triangular wall faces,  zone id: 25
+           3247 triangular wall faces,  zone id: 194
+          33689 triangular wall faces,  zone id: 24
+          61427 triangular wall faces,  zone id: 23
+          61427 triangular wall faces,  zone id: 195
+          10751 triangular wall faces,  zone id: 22
+          10751 triangular wall faces,  zone id: 196
+          19577 triangular wall faces,  zone id: 21
+          19577 triangular wall faces,  zone id: 197
+          41544 triangular wall faces,  zone id: 20
+          41544 triangular wall faces,  zone id: 198
+            420 triangular wall faces,  zone id: 19
+            420 triangular wall faces,  zone id: 199
+          54045 triangular wall faces,  zone id: 18
+          54045 triangular wall faces,  zone id: 200
+           2698 triangular wall faces,  zone id: 17
+           2698 triangular wall faces,  zone id: 201
+           2922 triangular wall faces,  zone id: 16
+           2922 triangular wall faces,  zone id: 202
+           7988 triangular wall faces,  zone id: 15
+           7988 triangular wall faces,  zone id: 203
+           2785 triangular wall faces,  zone id: 14
+           2785 triangular wall faces,  zone id: 204
+         180622 triangular wall faces,  zone id: 13
+         180622 triangular wall faces,  zone id: 253
+         180622 triangular wall faces,  zone id: 205
+         180622 triangular wall faces,  zone id: 254
+          96421 triangular wall faces,  zone id: 12
+          96421 triangular wall faces,  zone id: 206
+          80779 triangular wall faces,  zone id: 11
+          98106 triangular wall faces,  zone id: 10
+          23786 triangular wall faces,  zone id: 9
+          23786 triangular wall faces,  zone id: 207
+          89153 triangular wall faces,  zone id: 8
+          89153 triangular wall faces,  zone id: 255
+          89153 triangular wall faces,  zone id: 208
+          89153 triangular wall faces,  zone id: 256
+         110467 triangular wall faces,  zone id: 7
+          18245 triangular wall faces,  zone id: 6
+          18245 triangular wall faces,  zone id: 209
+          30544 triangular wall faces,  zone id: 5
+          30544 triangular wall faces,  zone id: 210
+           2418 triangular wall faces,  zone id: 4
+           2418 triangular wall faces,  zone id: 211
+          35132 triangular wall faces,  zone id: 3
+          51405 triangular wall faces,  zone id: 2
+          51405 triangular wall faces,  zone id: 212
+         269174 quadrilateral interior faces,  zone id: 223
+           3518 quadrilateral wall faces,  zone id: 225
+         269174 quadrilateral interior faces,  zone id: 228
+           3518 quadrilateral wall faces,  zone id: 230
+         269174 quadrilateral interior faces,  zone id: 232
+           3518 quadrilateral wall faces,  zone id: 234
+         132392 quadrilateral interior faces,  zone id: 237
+           2675 quadrilateral wall faces,  zone id: 239
+         132392 quadrilateral interior faces,  zone id: 242
+           2675 quadrilateral wall faces,  zone id: 244
+         132392 quadrilateral interior faces,  zone id: 246
+           2675 quadrilateral wall faces,  zone id: 248
+     6921466 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast, model-weighted),
+	distributing mesh
+		pairs........,
+		parts........,
+		faces........,
+		nodes........,
+		shadow nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 2257904/14490 = 155.825
+  Reading Shell Flags ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	r_compressor_plate_cabinet_foam_cabinet_foam_52-shadow
+	r_watertray_compressor_plate_compressor_plate_47-shadow
+	r_mc_air_sealing_con_2_mc_air_38-shadow
+	r_condenser_bot_plate_watertray_watertray_37-shadow
+	r_mc_air_sealing_fan_1_mc_air_33-shadow
+	r_fan_bracket_watertray_fan_bracket_32:102-shadow
+	r_fan_bracket_watertray_fan_bracket_32-shadow
+	r_mc_air_sealing_con_4_mc_air_25:100-shadow
+	r_mc_air_mc_cover_mc_air_5:99-shadow
+	r_cabinet_booth_back_mc_cover_cabinet_booth_back__1_80-shadow
+	r_cabinet_booth_back_compressor_plate_compressor_plate_79-shadow
+	r_ambient_air_cabinet_booth_back_ambient_air__1_78-shadow
+	r_cabinet_booth_back_compressor_plate_cabinet_booth_back_77-shadow
+	r_cabinet_booth_front_cabinet_foam_cabinet_foam_76-shadow
+	r_cabinet_booth_front_cabinet_foam_cabinet_booth_front_75-shadow
+	r_ambient_air_cabinet_booth_front_ambient_air__1_74-shadow
+	r_fan_bracket_cabinet_foam_cabinet_foam_73-shadow
+	r_watertray_sealing_fan_2_watertray_72-shadow
+	r_porous_64_condenser_bot_plate_porous_64_71-shadow
+	r_mc_air_compressor_plate_lid_pp_mc_air_70-shadow
+	r_sealing_con_3_sealing_con_2_sealing_con_2_69-shadow
+	r_sealing_con_1_cabinet_foam_sealing_con_1_68-shadow
+	r_sealing_con_2_sealing_con_1_sealing_con_2_67-shadow
+	r_fan_bracket_sealing_con_4_fan_bracket_66-shadow
+	r_sealing_fan_1_cabinet_foam_cabinet_foam_65-shadow
+	r_fan_bracket_sealing_fan_1_sealing_fan_1_64-shadow
+	r_watertray_compressor_plate_lid_pp_watertray_63-shadow
+	r_condenser_bot_plate_sealing_con_1_sealing_con_1_62-shadow
+	r_mc_cover_cabinet_foam_cabinet_foam_61-shadow
+	r_compressor_plate_lid_pp_cabinet_foam_cabinet_foam_60-shadow
+	r_mc_cover_compressor_plate_compressor_plate_59-shadow
+	r_porous_64_sealing_con_2_porous_64_56-shadow
+	r_ambient_air_compressor_plate_lid_pp_ambient_air_55-shadow
+	r_compressor_plate_sealing_con_4_compressor_plate_54-shadow
+	r_mc_cover_sealing_fan_1_sealing_fan_1_53-shadow
+	r_compressor_plate_cabinet_foam_cabinet_foam_52:110-shadow
+	r_mc_cover_sealing_con_1_sealing_con_1_51-shadow
+	r_mc_cover_sealing_con_4_mc_cover_50-shadow
+	r_cabinet_booth_back_mc_cover_cabinet_booth_back_49-shadow
+	r_porous_64_sealing_con_3_porous_64_48-shadow
+	r_watertray_compressor_plate_compressor_plate_47:109-shadow
+	r_porous_64_sealing_con_1_porous_64_46-shadow
+	r_compressor_plate_lid_pp_compressor_plate_compressor_plate_44-shadow
+	r_watertray_sealing_con_4_watertray_43-shadow
+	r_condenser_bot_plate_sealing_con_4_sealing_con_4_42-shadow
+	r_sealing_con_3_cabinet_foam_sealing_con_3_40-shadow
+	r_mc_air_sealing_con_2_mc_air_38:105-shadow
+	r_condenser_bot_plate_watertray_watertray_37:104-shadow
+	r_dumbell_side_1_cabinet_foam_dumbell_side_1_36-shadow
+	r_ambient_air_cabinet_booth_back_ambient_air_35-shadow
+	r_mc_air_sealing_fan_1_mc_air_33:103-shadow
+	r_fan_bracket_watertray_fan_bracket_32:101-shadow
+	r_sealing_fan_2_cabinet_foam_cabinet_foam_31-shadow
+	r_dumbell_side_2_cabinet_foam_dumbell_side_2_30-shadow
+	r_sealing_con_2_cabinet_foam_cabinet_foam_29-shadow
+	r_sealing_con_4_sealing_fan_1_sealing_con_4_28-shadow
+	r_ambient_air_ui_top_ambient_air_27-shadow
+	r_fan_bracket_sealing_fan_2_sealing_fan_2_26-shadow
+	r_mc_air_sealing_con_4_mc_air_25-shadow
+	r_condenser_bot_plate_mc_air_mc_air_23-shadow
+	r_mc_air_sealing_fan_2_mc_air_22-shadow
+	r_mc_air_compressor_plate_mc_air_21-shadow
+	r_ambient_air_mc_cover_ambient_air_20-shadow
+	r_ambient_air_cabinet_booth_front_ambient_air_19-shadow
+	r_fan_bracket_fan_frame_fan_frame_18-shadow
+	r_mc_air_sealing_con_3_mc_air_17-shadow
+	r_cabinet_foam_ui_top_ui_top_16-shadow
+	r_trapped_air_ui_top_trapped_air_15-shadow
+	r_condenser_bot_plate_sealing_con_3_sealing_con_3_14-shadow
+	r_ambient_air_cabinet_foam_ambient_air_13-shadow
+	r_mc_air_fan_frame_mc_air_12-shadow
+	r_ambient_air_compressor_plate_ambient_air_9-shadow
+	r_mc_air_cabinet_foam_mc_air_8-shadow
+	r_mc_air_fan_bracket_mc_air_6-shadow
+	r_mc_air_mc_cover_mc_air_5-shadow
+	r_mc_air_sealing_con_1_mc_air_4-shadow
+	r_mc_air_watertray_mc_air_2-shadow
+	cabinet_booth_front_-4-interior
+	cabinet_booth_back_-2-interior
+	sealing_fan_1_13-interior
+	cabinet_booth_back_-1-interior
+	sealing_fan_2_14-interior
+	sealing_con_2_17-interior
+	compressor_plate_lid_pp_21-interior
+	cabinet_booth_front_-3-interior
+	sealing_con_1_16-interior
+	compressor_plate_20-interior
+	sealing_con_3_18-interior
+	fan_frame_26-interior
+	dumbell_side_1_31-interior
+	trapped_air_10-interior
+	porous_64_36-interior
+	condenser_bot_plate_35-interior
+	dumbell_side_2_32-interior
+	fan_bracket_28-interior
+	watertray_27-interior
+	sealing_con_4_15-interior
+	mc_air_29-interior
+	cabinet_foam_11-interior
+	fan_mrf_12-interior
+	ui_top_3-interior
+	mc_cover_22-interior
+	ambient_air_30-interior
+	r_porous_64_mc_air_87:112
+	r_ambient_air_mc_air_86:111
+	r_compressor_plate_cabinet_foam_cabinet_foam_52
+	r_watertray_compressor_plate_compressor_plate_47
+	r_compressor_shell_compressor_plate_compressor_plate_41
+	r_mc_air_sealing_con_2_mc_air_38
+	r_condenser_bot_plate_watertray_watertray_37
+	r_mc_air_sealing_fan_1_mc_air_33
+	r_fan_bracket_watertray_fan_bracket_32:102
+	r_fan_bracket_watertray_fan_bracket_32
+	r_mc_air_sealing_con_4_mc_air_25:100
+	r_mc_air_mc_cover_mc_air_5:99
+	tg_fzone_96
+	tg_fzone_95
+	tg_fzone_94
+	tg_fzone_93
+	tg_fzone_92
+	tg_fzone_91
+	tg_fzone_90
+	tg_fzone_89
+	tg_fzone_88
+	r_porous_64_mc_air_87
+	r_ambient_air_mc_air_86
+	r_dumbell_side_1_ambient_air_85
+	r_mc_air_fan_mrf_84
+	r_dumbell_side_1_mc_air_83
+	r_dumbell_side_2_ambient_air_82
+	r_dumbell_side_2_mc_air_81
+	r_cabinet_booth_back_mc_cover_cabinet_booth_back__1_80
+	r_cabinet_booth_back_compressor_plate_compressor_plate_79
+	r_ambient_air_cabinet_booth_back_ambient_air__1_78
+	r_cabinet_booth_back_compressor_plate_cabinet_booth_back_77
+	r_cabinet_booth_front_cabinet_foam_cabinet_foam_76
+	r_cabinet_booth_front_cabinet_foam_cabinet_booth_front_75
+	r_ambient_air_cabinet_booth_front_ambient_air__1_74
+	r_fan_bracket_cabinet_foam_cabinet_foam_73
+	r_watertray_sealing_fan_2_watertray_72
+	r_porous_64_condenser_bot_plate_porous_64_71
+	r_mc_air_compressor_plate_lid_pp_mc_air_70
+	r_sealing_con_3_sealing_con_2_sealing_con_2_69
+	r_sealing_con_1_cabinet_foam_sealing_con_1_68
+	r_sealing_con_2_sealing_con_1_sealing_con_2_67
+	r_fan_bracket_sealing_con_4_fan_bracket_66
+	r_sealing_fan_1_cabinet_foam_cabinet_foam_65
+	r_fan_bracket_sealing_fan_1_sealing_fan_1_64
+	r_watertray_compressor_plate_lid_pp_watertray_63
+	r_condenser_bot_plate_sealing_con_1_sealing_con_1_62
+	r_mc_cover_cabinet_foam_cabinet_foam_61
+	r_compressor_plate_lid_pp_cabinet_foam_cabinet_foam_60
+	r_mc_cover_compressor_plate_compressor_plate_59
+	r_ambient_air_rc_liner_ambient_air_57
+	r_porous_64_sealing_con_2_porous_64_56
+	r_ambient_air_compressor_plate_lid_pp_ambient_air_55
+	r_compressor_plate_sealing_con_4_compressor_plate_54
+	r_mc_cover_sealing_fan_1_sealing_fan_1_53
+	r_compressor_plate_cabinet_foam_cabinet_foam_52:110
+	r_mc_cover_sealing_con_1_sealing_con_1_51
+	r_mc_cover_sealing_con_4_mc_cover_50
+	r_cabinet_booth_back_mc_cover_cabinet_booth_back_49
+	r_porous_64_sealing_con_3_porous_64_48
+	r_watertray_compressor_plate_compressor_plate_47:109
+	r_porous_64_sealing_con_1_porous_64_46
+	r_ui_top_rc_liner_ui_top_45
+	r_compressor_plate_lid_pp_compressor_plate_compressor_plate_44
+	r_watertray_sealing_con_4_watertray_43
+	r_condenser_bot_plate_sealing_con_4_sealing_con_4_42
+	r_sealing_con_3_cabinet_foam_sealing_con_3_40
+	r_mc_air_sealing_con_2_mc_air_38:105
+	r_condenser_bot_plate_watertray_watertray_37:104
+	r_dumbell_side_1_cabinet_foam_dumbell_side_1_36
+	r_ambient_air_cabinet_booth_back_ambient_air_35
+	bou_of_ambient_air_inside_34
+	r_mc_air_sealing_fan_1_mc_air_33:103
+	r_fan_bracket_watertray_fan_bracket_32:101
+	r_sealing_fan_2_cabinet_foam_cabinet_foam_31
+	r_dumbell_side_2_cabinet_foam_dumbell_side_2_30
+	r_sealing_con_2_cabinet_foam_cabinet_foam_29
+	r_sealing_con_4_sealing_fan_1_sealing_con_4_28
+	r_ambient_air_ui_top_ambient_air_27
+	r_fan_bracket_sealing_fan_2_sealing_fan_2_26
+	r_mc_air_sealing_con_4_mc_air_25
+	r_ambient_air_fc_liner_ambient_air_24
+	r_condenser_bot_plate_mc_air_mc_air_23
+	r_mc_air_sealing_fan_2_mc_air_22
+	r_mc_air_compressor_plate_mc_air_21
+	r_ambient_air_mc_cover_ambient_air_20
+	r_ambient_air_cabinet_booth_front_ambient_air_19
+	r_fan_bracket_fan_frame_fan_frame_18
+	r_mc_air_sealing_con_3_mc_air_17
+	r_cabinet_foam_ui_top_ui_top_16
+	r_trapped_air_ui_top_trapped_air_15
+	r_condenser_bot_plate_sealing_con_3_sealing_con_3_14
+	r_ambient_air_cabinet_foam_ambient_air_13
+	r_mc_air_fan_frame_mc_air_12
+	r_cabinet_foam_fc_liner_cabinet_foam_11
+	bou_of_fan_mrf_inside_10
+	r_ambient_air_compressor_plate_ambient_air_9
+	r_mc_air_cabinet_foam_mc_air_8
+	r_cabinet_foam_rc_liner_cabinet_foam_7
+	r_mc_air_fan_bracket_mc_air_6
+	r_mc_air_mc_cover_mc_air_5
+	r_mc_air_sealing_con_1_mc_air_4
+	r_mc_air_compressor_shell_mc_air_3
+	r_mc_air_watertray_mc_air_2
+	r_inlet_ambient_air_ambient_air_39
+	r_compressor_shell_compressor_plate_compressor_plate_41:106
+	r_compressor_shell_compressor_plate_compressor_plate_41:107
+	r_compressor_shell_compressor_plate_compressor_plate_41:108
+	r_outlet_ambient_air_ambient_air_58
+	r_porous_64_sealing_con_1_porous_64_46:220
+	r_porous_64_sealing_con_3_porous_64_48:219
+	r_porous_64_sealing_con_2_porous_64_56:218
+	r_porous_64_condenser_bot_plate_porous_64_71:217
+	porous_64_36-interior:214
+	r_porous_64_mc_air_87:112:215
+	r_porous_64_mc_air_87:216
+	ambient_air_30
+	fan_mrf_12
+	mc_air_29
+	dumbell_side_2_32
+	porous_64_36
+	dumbell_side_1_31
+	mc_cover_22
+	ui_top_3
+	cabinet_foam_11
+	sealing_con_4_15
+	watertray_27
+	fan_bracket_28
+	condenser_bot_plate_35
+	trapped_air_10
+	fan_frame_26
+	sealing_con_3_18
+	compressor_plate_20
+	sealing_con_1_16
+	cabinet_booth_front_-3
+	compressor_plate_lid_pp_21
+	sealing_con_2_17
+	sealing_fan_2_14
+	cabinet_booth_back_-1
+	sealing_fan_1_13
+	cabinet_booth_back_-2
+	cabinet_booth_front_-4
+	porous_64_36:213
+	shell conduction zones,
+		wall 8, layer 1, thickness = 1.2e-05, material = mat_aluminum, heat generation rate = constant (0).
+		wall 8, layer 2, thickness = 0.001, material = mat_cardboard, heat generation rate = constant (0).
+		wall 8, layer 3, thickness = 0.001, material = fn_prop_polywave, heat generation rate = constant (0).
+		wall 13, layer 1, thickness = 1.2e-05, material = mat_aluminum, heat generation rate = constant (0).
+		wall 13, layer 2, thickness = 0.001, material = mat_cardboard, heat generation rate = constant (0).
+		wall 13, layer 3, thickness = 0.001, material = fn_prop_polywave, heat generation rate = constant (0).
+Updating shell metrics...done.
+
+Migrating 1699 cell(s) across compute nodes...
+Updating shell metrics...done.
+Done.
+Shell junction connectivity...done
+
+     parallel,
+ Establishing Connectivity of zones 133 and 213...Done
+
+Done.
+
+Reading from CASL5CD952DBRR:"D:/SBD/BMLite_60/_sbd/doe2/case02/doe2_case02.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
