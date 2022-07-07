@@ -1,0 +1,10 @@
+/file read-case-data D:/SBD/BM/case04/doe_case_xx.cas.h5
+
+;Noise @ blower bou_of_fan_mrf_inside*
+/report/surface-integrals/ vertex-max bou_of_fan_mrf_inside* () surface-acoustic-power-db yes "D:/SBD/BM/case04/Post_processing.srp"
+;Noise @ fan bracket r_mc_air_fan_bracket_mc_air_*
+/report/surface-integrals/ vertex-max r_mc_air_fan_bracket_mc_air_* () surface-acoustic-power-db yes "D:/SBD/BM/case04/Post_processing.srp" yes
+;Volume flowrate
+/report/surface-integrals/  volume-flow-rate r_porous*mc_air* () yes "D:/SBD/BM/case04/Post_processing.srp" yes
+
+/exit yes

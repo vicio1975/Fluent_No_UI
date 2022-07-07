@@ -1,0 +1,37 @@
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:53:52 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "CASL5CD952DBRR" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname        Core  O.S.         PID    Vendor                        
+-------------------------------------------------------------------------------
+n4    CASL5CD952DBRR  5/16  Windows-x64  8536   Intel(R) Xeon(R) E-2286M      
+n3    CASL5CD952DBRR  4/16  Windows-x64  17012  Intel(R) Xeon(R) E-2286M      
+n2    CASL5CD952DBRR  3/16  Windows-x64  11172  Intel(R) Xeon(R) E-2286M      
+n1    CASL5CD952DBRR  2/16  Windows-x64  12900  Intel(R) Xeon(R) E-2286M      
+n0*   CASL5CD952DBRR  1/16  Windows-x64  12492  Intel(R) Xeon(R) E-2286M      
+host  CASL5CD952DBRR        Windows-x64  19588  Intel(R) Xeon(R) E-2286M      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+
+
+Cleanup script file is C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\\cleanup-fluent-CASL5CD952DBRR-9940.bat
+
+Error: Journal file "C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/jounal_examples/ff2.jou" not found.
+Error Object: #f
+
+> 
+0 (..\\src\\mpsystem.c@1221): mpt_read: failed: errno = 10054
+
+0: mpt_read: error: read failed trying to read 8 bytes: No error
