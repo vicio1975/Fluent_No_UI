@@ -16,7 +16,7 @@ root = tk.Tk()
 root.geometry("250x450+300+300")
 root.title("Fluent w/o GUI")
 root.resizable(width=False, height=False)
-root.iconbitmap('C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/pizza.ico')
+#root.iconbitmap('C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/pizza.ico')
 
 #Fonts
 f_H12B = font.Font(family='Helvetica', size=12, weight='bold')
