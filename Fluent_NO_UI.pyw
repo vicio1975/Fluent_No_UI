@@ -10,13 +10,13 @@ from tkinter import messagebox
 from tkinter import filedialog
 from tkinter import font
 import os
-#import subprocess
 
 ##Tkinter Window
 root = tk.Tk()
 root.geometry("250x450+300+300")
 root.title("Fluent w/o GUI")
 root.resizable(width=False, height=False)
+root.iconbitmap('C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/pizza.ico')
 
 #Fonts
 f_H12B = font.Font(family='Helvetica', size=12, weight='bold')
@@ -38,7 +38,6 @@ frame00.config(borderwidth=2)
 frame22 = tk.LabelFrame(top_frame, width=20, height=25, text="Fluent Version",font=f_H12B)
 frame22.grid(row=0, column=0,pady=10,ipady=3, ipadx = 11)
 frame22.config(borderwidth=2)
- #frame22.grid_propagate(False)
 
 frame01 = tk.LabelFrame(top_frame, width=220, height=100, text="Cores Number",font=f_H12B)
 frame01.grid(row=2, column=0, pady=10, ipady=8, ipadx = 11)
@@ -47,8 +46,6 @@ frame01.config(borderwidth=2)
 frame11 = tk.LabelFrame(top_frame, width=105, height=100)
 frame11.grid(row=5, column=0, padx=12, pady=8, ipadx=1, ipady=5)
 frame11.config(borderwidth=2)
-
-
 
 frame33 = tk.LabelFrame(top_frame, width=105, height=100, text="Solver type",font=f_H12B)
 frame33.grid(row=4, column=0, padx=12, pady=8, ipadx=1, ipady=5)
@@ -178,7 +175,6 @@ ex.pack(side='right', fill='x', ipadx=2, padx=3, pady=5)
 journal_btn = tk.Button(frame00, text="Open Journal",
                         command =open_j, font=f_H12)
 journal_btn.pack(expand=True)
-#command = switchButtonState
 
 ##########################
 root.mainloop()
