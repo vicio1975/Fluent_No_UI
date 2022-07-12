@@ -98,7 +98,6 @@ def open_j():
         FS = str(journal_name.name)
         switchButtonState()
 
-
 def run_journal():
     """
     This prepare the command line for fluent
