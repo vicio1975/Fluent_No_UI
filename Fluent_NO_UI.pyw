@@ -10,6 +10,7 @@ from tkinter import messagebox
 from tkinter import filedialog
 from tkinter import font
 import os
+from threading import *
 
 ##Tkinter Window
 root = tk.Tk()
@@ -54,6 +55,11 @@ frame33.config(borderwidth=2)
 ##########################################
 
 ##Functions
+def threading_1():
+    #call function run_journal()
+    t1 = Thread(target=run_journal)
+    t1.start()
+
 def fluent_dir():
     """
     This allows to set the fluent ver and assigns it to a var
@@ -160,7 +166,7 @@ ds_2.configure(command=ACTF)
 
 ##############Buttons
 #Run button
-run_butt = tk.Button(frame11, text="RUN", font=f_H12, command=run_journal,
+run_butt = tk.Button(frame11, text="RUN", font=f_H12, command=threading_1,
                      state=tk.DISABLED)
 run_butt.config(height=1, width=10)
 run_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)

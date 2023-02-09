@@ -2,5 +2,3 @@
 switch-to-mesh-mode yes
 ;switch-to-solution-mode yes
 /file read-case D:/SBD/SpaceNF/SpaceNFsurf.msh.h5
-
-
