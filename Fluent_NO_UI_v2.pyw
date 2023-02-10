@@ -2,9 +2,6 @@
 """
 Created by Vincenzo Sammartano
 email:  v.sammartano@gmail.com
-TO do list
-1 remove the thread 0 ....DONE!
-2 improve button change state function
 """
 ###Libraries
 import tkinter as tk
