@@ -16,7 +16,8 @@ import warnings
 
 ##Tkinter Window
 root = tk.Tk()
-root.geometry("250x515+300+300")
+root.geometry("160x515+300+300")
+##root.geometry("250x515+300+300")
 root.title("Fluent w/o UI")
 root.resizable(width=False, height=False)
 #root.iconbitmap('C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/pizza.ico')
@@ -67,10 +68,10 @@ def threading_1():
     #call function run_journal()
     t1 = Thread(target=run_journal)
     t1.start()
-def threading_2():
-    #call function graph()
-    t2 = Thread(target=graph)
-    t2.start()
+##def threading_2():
+##    #call function graph()
+##    t2 = Thread(target=graph)
+##    t2.start()
 
 ##Functions
 def fluent_dir():
@@ -218,11 +219,11 @@ run_butt = tk.Button(frame11, text="RUN", font=f_H12, command=threading_1,
 run_butt.config(height=1, width=10)
 run_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)
 
-#Graph button
-gr_butt = tk.Button(frame11, text="GRAPH", font=f_H12, command=threading_2,
-                     state=tk.NORMAL)
-gr_butt.config(height=1, width=10)
-gr_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)
+###Graph button
+##gr_butt = tk.Button(frame11, text="GRAPH", font=f_H12, command=threading_2,
+##                     state=tk.NORMAL)
+##gr_butt.config(height=1, width=10)
+##gr_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)
 
 #Exit Button
 ex = tk.Button(frame12, text="EXIT", command=ex, font=f_H12)
