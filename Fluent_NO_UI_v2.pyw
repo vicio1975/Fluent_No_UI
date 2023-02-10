@@ -2,7 +2,9 @@
 """
 Created by Vincenzo Sammartano
 email:  v.sammartano@gmail.com
-
+TO do list
+1 remove the thread 0 ....DONE!
+2 improve button change state function
 """
 ###Libraries
 import tkinter as tk
@@ -11,10 +13,13 @@ from tkinter import filedialog
 from tkinter import font
 import os
 from threading import *
+from tkinter.filedialog import askopenfile
+import matplotlib.pyplot as plt
+import warnings
 
 ##Tkinter Window
 root = tk.Tk()
-root.geometry("250x450+300+300")
+root.geometry("250x515+300+300")
 root.title("Fluent w/o UI")
 root.resizable(width=False, height=False)
 #root.iconbitmap('C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/pizza.ico')
@@ -40,26 +45,37 @@ frame22 = tk.LabelFrame(top_frame, width=20, height=25, text="Fluent Version",fo
 frame22.grid(row=0, column=0,pady=10,ipady=3, ipadx = 11)
 frame22.config(borderwidth=2)
 
-frame01 = tk.LabelFrame(top_frame, width=220, height=100, text="Cores Number",font=f_H12B)
-frame01.grid(row=2, column=0, pady=10, ipady=8, ipadx = 11)
-frame01.config(borderwidth=2)
-
-frame11 = tk.LabelFrame(top_frame, width=105, height=100)
-frame11.grid(row=5, column=0, padx=12, pady=8, ipadx=1, ipady=5)
-frame11.config(borderwidth=2)
-
 frame33 = tk.LabelFrame(top_frame, width=105, height=100, text="Solver type",font=f_H12B)
 frame33.grid(row=4, column=0, padx=12, pady=8, ipadx=1, ipady=5)
 frame33.config(borderwidth=2)
 
+frame01 = tk.LabelFrame(top_frame, width=220, height=100, text="Cores Number",font=f_H12B)
+frame01.grid(row=2, column=0, pady=10, ipady=8, ipadx = 11)
+frame01.config(borderwidth=2)
+
+#frame for Run and Graph buttons
+frame11 = tk.LabelFrame(top_frame, width=105, height=150)
+frame11.grid(row=5, column=0, padx=12, pady=8, ipadx=1, ipady=5)
+frame11.config(borderwidth=2)
+
+#Exit Frame
+frame12 = tk.LabelFrame(top_frame, width=105, height=150)
+frame12.grid(row=6, column=0, padx=12, pady=8, ipadx=1, ipady=5)
+frame12.config(borderwidth=2)
+
 ##########################################
 
-##Functions
+##Threads
 def threading_1():
     #call function run_journal()
     t1 = Thread(target=run_journal)
     t1.start()
+def threading_2():
+    #call function graph()
+    t2 = Thread(target=graph)
+    t2.start()
 
+##Functions
 def fluent_dir():
     """
     This allows to set the fluent ver and assigns it to a var
@@ -128,6 +144,35 @@ def run_journal():
     # OS command injection
     command = "cmd /k " + com
     os.system (command)
+    
+def graph():
+    """
+    This plot data file
+    """
+    file_name = filedialog.askopenfilename( title="Select the file",filetypes=(("Fluent output","*.out"),("Text files", "*.txt"),("CSV", "*.csv"),("Data","*.dat")))
+    fid = open (file_name, "r+")
+    it = []
+    var = []
+    i = 0
+    print(file_name)
+    # Data from file
+    for line in fid:
+        if i == 0:
+            var_name = line.split('rep_')[1][:-2]
+            print(var_name)
+        if i > 2:
+            line = line.split(" ")  # remove the commas
+            it.append (float(line[0]))  # iterations
+            var.append (float(line[1]))  # variable    
+        i += 1
+    fid.close ()
+    fig, (ax1) = plt.subplots(1, 1)
+    ax1.plot(it, var)
+    ax1.set_xlim(0, len(it))
+    ax1.set_xlabel('Iterations')
+    ax1.set_ylabel(var_name)
+    ax1.grid(True)
+    plt.show()
 
 ###end of Functions
 
@@ -165,21 +210,29 @@ ds_2.configure(fg='gray')
 ds_2.configure(command=ACTF)
 
 ##############Buttons
+#Journal Button
+journal_btn = tk.Button(frame00, text="Open Journal",
+                        command =open_j, font=f_H12)
+journal_btn.pack(expand=True)
+
 #Run button
 run_butt = tk.Button(frame11, text="RUN", font=f_H12, command=threading_1,
                      state=tk.DISABLED)
 run_butt.config(height=1, width=10)
 run_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)
 
+#Graph button
+gr_butt = tk.Button(frame11, text="GRAPH", font=f_H12, command=threading_2,
+                     state=tk.NORMAL)
+gr_butt.config(height=1, width=10)
+gr_butt.pack(side='left', fill='x', ipadx=2, padx=3, pady=5)
+
 #Exit Button
-ex = tk.Button(frame11, text="EXIT", command=ex, font=f_H12)
+ex = tk.Button(frame12, text="EXIT", command=ex, font=f_H12)
 ex.config(height=1, width=10)
 ex.pack(side='right', fill='x', ipadx=2, padx=3, pady=5)
 
-#Journal Button
-journal_btn = tk.Button(frame00, text="Open Journal",
-                        command =open_j, font=f_H12)
-journal_btn.pack(expand=True)
+warnings.simplefilter(action='ignore', category=UserWarning)
 
 ##########################
 root.mainloop()
