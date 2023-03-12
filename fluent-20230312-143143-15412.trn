@@ -1,0 +1,57 @@
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:53:52 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "CASL5CD952DBRR" (win64).
+
+--------------------------------------------------------------------------------
+ID    Hostname        Core   O.S.         PID    Vendor                        
+--------------------------------------------------------------------------------
+n9    CASL5CD952DBRR  10/16  Windows-x64  11136  Intel(R) Xeon(R) E-2286M      
+n8    CASL5CD952DBRR  9/16   Windows-x64  17832  Intel(R) Xeon(R) E-2286M      
+n7    CASL5CD952DBRR  8/16   Windows-x64  9292   Intel(R) Xeon(R) E-2286M      
+n6    CASL5CD952DBRR  7/16   Windows-x64  9592   Intel(R) Xeon(R) E-2286M      
+n5    CASL5CD952DBRR  6/16   Windows-x64  16312  Intel(R) Xeon(R) E-2286M      
+n4    CASL5CD952DBRR  5/16   Windows-x64  6048   Intel(R) Xeon(R) E-2286M      
+n3    CASL5CD952DBRR  4/16   Windows-x64  6868   Intel(R) Xeon(R) E-2286M      
+n2    CASL5CD952DBRR  3/16   Windows-x64  14864  Intel(R) Xeon(R) E-2286M      
+n1    CASL5CD952DBRR  2/16   Windows-x64  10724  Intel(R) Xeon(R) E-2286M      
+n0*   CASL5CD952DBRR  1/16   Windows-x64  6020   Intel(R) Xeon(R) E-2286M      
+host  CASL5CD952DBRR         Windows-x64  10036  Intel(R) Xeon(R) E-2286M      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+--------------------------------------------------------------------------------
+
+
+
+Cleanup script file is C:\Users\SammaV\Documents\GitHub\Fluent_No_GUI\\cleanup-fluent-CASL5CD952DBRR-15412.bat
+
+Reading journal file C:/Users/SammaV/Documents/GitHub/Fluent_No_GUI/journal_examples/test.jou...
+
+> ;;;;;;;;;;;;;;;;;;
+;;This is a test;;
+;;;;;;;;;;;;;;;;;;
+
+
+define/                 parallel/               solve/
+display/                plot/                   surface/
+exit                    preferences/            switch-to-meshing-mode
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> 
+define/                 parallel/               solve/
+display/                plot/                   surface/
+exit                    preferences/            switch-to-meshing-mode
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> 
+> 
